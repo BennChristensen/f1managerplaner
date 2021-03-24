@@ -1,0 +1,40 @@
+﻿@page "/predictions"
+@inject HttpClient Http
+<h3>Predictions</h3>
+@if (drivers is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <ul>
+
+
+                    @foreach (var driver in drivers)
+                    {
+                        <DriverComponent Name="@driver.Name"></DriverComponent>
+                    }
+                </ul>
+            </div>
+            <div class="col">
+                <StartPod Position="1"></StartPod>
+                <StartPod Position="2"></StartPod>
+                <StartPod Position="3"></StartPod>
+                <StartPod Position="4"></StartPod>
+            </div>
+        </div>
+    </div>
+}
+@code {
+    private Driver[] drivers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        drivers = await Http.GetFromJsonAsync<Driver[]>("sample-data/drivers.json");
+    }
+}
+
+

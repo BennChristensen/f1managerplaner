@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Antonio Giovinazzi",
+    "price": 3000000,
+    "pitcrew": {
+      "id": 1,
+      "name": "Alfa Romeo",
+      "price": 5500000
+    },
+    "constructor": {
+      "id": 1,
+      "name": "Alfa Romeo C41",
+      "price": "3500000"
+    }
+  },
+  {
+    "name": "Kimi Räikkönen",
+    "price": 3000000,
+    "pitcrew": {
+      "id": 1,
+      "name": "Alfa Romeo",
+      "price": 5500000
+    },
+    "constructor": {
+      "id": 1,
+      "name": "Alfa Romeo C41",
+      "price": "3500000"
+    }
+  },
+  {
+    "name": "Pierre Gasly",
+    "price": 5000000,
+    "pitcrew": {
+      "id": 1,
+      "name": "AlphaTauri",
+      "price": 6500000
+    },
+    "constructor": {
+      "id": 1,
+      "name": "AlphaTauri AT02",
+      "price": "5000000"
+    }
+  },
+  {
+    "name": "Yuki Tsunoda",
+    "price": 4000000,
+    "pitcrew": {
+      "id": 1,
+      "name": "AlphaTauri",
+      "price": 6500000
+    },
+    "constructor": {
+      "id": 1,
+      "name": "AlphaTauri AT02",
+      "price": "5000000"
+    }
+  }
+]
